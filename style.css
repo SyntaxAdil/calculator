@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: transform  0.25s ease;
+
+}
+body{
+    background-color: rgb(35, 40, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator{
+    /* background-color: rgb(42, 49, 59); */
+    background-color: rgb(38, 45, 53);
+    padding: 50px 30px ;
+   border-radius: 15px;
+   border: 1px solid rgb(79, 87, 96);
+   box-shadow: 0px 0px 10px 2px rgba(81, 92, 106,0.6);
+    position: relative;
+
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    
+    
+}
+.buttons button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    background-color:  rgb(40, 40, 50);
+    color: rgb(229, 223, 218);
+    box-shadow: -2px -3px 15px 5px rgb(51, 54, 61);
+}
+button.green{
+    color: rgb(127, 214, 93);
+}
+button:hover{
+    background-color:  rgba(88, 87, 87,0.3);
+}
+button.orange{
+    background-color: rgb(252, 124, 18);
+}
+button.orange:hover{
+    background-color: rgb(252, 144, 55);
+}
+.buttons button:active{
+    transform: calc(0.95s);
+    transform: scale(0.92);
+    border: 1px solid white;
+
+}
+.display{
+    padding: 20px  ;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    background-color: rgb(40, 47, 57);
+    border: none;
+    border: 1px solid rgba(204, 204, 204, 0.2);
+    box-shadow: inset 0px 0px 10px 5px rgb(201, 193, 193,0.02);
+    font-size: 1.3em;
+    text-align: right;
+    color: white;
+}
+.display:focus{
+    outline: none;
+}
+
+.copy{
+  position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;  
+    color: rgba(204, 204, 204, 0.09);
+}
